@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Your Uni Match Results</title>
+  <link rel="stylesheet" href="results.css">
+</head>
+<body>
+    <header>
+  <h1>UniCompass</h1>
+  <nav>
+    <ul>
+      <li><a href="Index.html">Home</a></li>
+      <li><a href="quiz.html">Take the Quiz</a></li>
+      <li><a href="Results.html">Your Results</a></li>
+    </ul>
+  </nav>
+</header>
+  <div class="results-container">
+    <div class="left-column">
+      <h2>Your Top Match</h2>
+      <img id="uniImage" class="uni-image" alt="University Logo" />
+      <h3 id="uniTitle">University Name</h3>
+      <p class="why-label">Why choose <span id="uniName">...</span>:</p>
+      <ul class="key-strengths"></ul>
+    </div>
+    <div class="right-column">
+      <h2 class="courses-header">Our Recommended Courses for You</h2>
+      <ul id="courseList" class="course-list"></ul>
+      <h3>More info on the uni</h3>
+      <p>
+        <strong>Open day date:</strong> <span id="openDayText">August 12</span> —
+         <a id="calendarLink" href="#" target="_blank">Add to Google Calendar</a>
+        </p>
+      <p><a id="uniHomepage" href="#" target="_blank">Link to uni homepage</a></p>
+      <div class="next-section">
+        <h3>Next best match</h3>
+        <button id="nextBtn">Next</button>
+        <button id="backBtn" style="display: none;">Back</button>
+        <div class="retake-container">
+        <button id="retakeQuizBtn">Retake the Quiz</button>
+         </div>
+      </div>
+      
+    </div>
+  </div>
+
+  <script src="results.js"></script>
+</body>
+</html>
